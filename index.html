@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
-
+		<title>Drupal y REST</title>
+        <link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white_custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -21,12 +21,213 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-	</head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu&display=swap" rel="stylesheet">
+    </head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Web Services REST y Drupal</h1>
+						<h3>II CONGRESO NACIONAL DE INGENIERÍA ELÉCTRICA E INGENIERÍA ELECTRÓNICA 2019</h3>
+					<p>
+						<small><a href="#">Alejandro Córdova Liendo</a></small>
+					</p>
+					<p>
+						<small>Reveal.js Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>
+				</section>
+
+				<section>
+					<div id="left">
+					<h2>¿Qué es Drupal?</h2>
+					<h3>Drupal es abierto</h3>
+					<p class="medium">Una plataforma de desarrollo web open source, gratuita, distribuída bajo la licencia GLP, para la creación, publicación y mantenimiento de contenido en línea y comunidades de usuarios.</p>
+					</div>
+					<div id="right">
+						<img class="plain" src="images/drupal.jpg" alt="">
+					</div>
+				</section>
+				<section>
+					<h3>Drupal es desarrollo web</h3>
+					<p>Drupal es en su instalación más básica, una plataforma web corriendo encima de una base de datos, con herramientas de gestión de archivos y un alto nivel de seguridad</p>
+				</section>
+				<section>
+					<h3>Drupal es social</h3>
+					<p>Drupal es un sistema multiusuario que permite la definición de roles y permisos para las personas que utilizan el sitio</p>
+				</section>
+				<section>
+					<h3>Drupal es comunidad</h3>
+					<p>Drupal cuenta con una enorme comunidad de desarrolladores y usuarios en todo el mundo, que actualizan y mantienene miles de módulos de forma continua</p>
+				</section>
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>¿Quién utiliza Drupal?</h2>
+						<p>Drupal es utilizado en todo el mundo por empresas, instituciones y personas:</p>
+						<p><a href="https://www.drupal.com/showcases">Drupal Showcases muestra una lista actualizada de sitios web en el mundo que utilizan Drupal</a></p>
+						<br>
+						<a href="#" class="navigate-down">
+							🡣
+						</a>
+					</section>
+					<section>
+						<h2>En Bolivia</h2>
+						<p><img class="plain" src="images/upb.png" alt="UPB" height="200"></p>
+						<p><img class="plain"  src="images/eldeber.png" alt="UPB" height="200"></p>
+					</section>
+
+					<section>
+						<p><img class="plain"  src="images/tigo.png" alt="UPB" height="200"></p>
+						<p><img class="plain"  src="images/aduana.png" alt="UPB" height="200"></p>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>¿Por qué Drupal?</h2>
+						<ul>
+							<li>Potencia</li>
+							<li>Modularidad</li>
+							<li>Seguridad</li>
+							<li>Portabilidad</li>
+							<li>Rapidez</li>
+							<li>Comunidad</li>
+							<li>Buenas prácticas</li>
+						</ul>
+					</section>
+					<section>
+						<h2>¿Pero por qué Drupal?</h2>
+						<ul>
+							<li>Sitios multilingües</li>
+							<li>Views</li>
+							<li>CCK</li>
+							<li>Form API</li>
+							<li>Mutisite</li>
+							<li>Image styles</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>¿Qué puedo hacer con Drupal?</h2>
+					<ul>
+						<li>Blogs</li>
+						<li>Sitios corporativos</li>
+						<li>Sitios institucionales</li>
+						<li>Sitios educacionales</li>
+						<li>Intranet</li>
+						<li>E-commerce</li>
+						<li>Framework de desarrollo</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>¿Qué necesito saber para usar Drupal?</h2>
+					<h3>Como usuario</h3>
+					<p>Nociones de HTML</p>
+					<h3>Como programador</h3>
+					<ul>
+						<li>PHP</li>
+						<li>Bases de datos</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>jQuery</li>
+						<li>Drupal API</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>La comunidad Drupal</h2>
+					<ul>
+						<li>30.000+ desarrolladores en todo el mundo</li>
+						<li>Eventos y encuentros</li>
+						<li>Comunidad en Bolivia</li>
+						<a href="http://drupical.com">Drupical</a>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>{ REST }</h2>
+					<ul>
+						<li>Representational State Transfer</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Principios</h2>
+					<ol>
+						<li>
+							Client-server
+						</li>
+						<li>
+							Stateless
+						</li>
+						<li>
+							Cacheable
+						</li>
+						<li>
+							Uniform interface
+						</li>
+						<li>
+							Layered system
+						</li>
+						<li>
+							Code on demand
+						</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Recursos</h2>
+					<h2>Métodos</h2>
+					<p>
+						GET, POST, PUT, DELETE, PATCH
+					</p>
+				</section>
+				
+				<section>
+					<h2>
+						Drupal sin cabeza
+					</h2>
+				</section>
+				<section>
+					<h3>
+						Sitio web estático
+					</h3>
+					<img src="images/htmlestatico.png" alt="" class="plain">
+				</section>
+				<section>
+					<h3>
+						CMS
+					</h3>
+					<img src="images/cmsweb.png" alt="" class="plain">
+				</section>
+				<section>
+					<h3>
+						Headless
+					</h3>
+					<img src="images/headless.png" alt="" class="plain">
+				</section>
+				<section>
+					<h2>Discovery</h2>
+					<ul>
+						<li>
+							Multilenguaje
+						</li>
+						<li>
+							Alta disponibilidad
+						</li>
+						<li>
+							Integración con servicios de terceros
+						</li>
+						<li>
+							Apps
+						</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
@@ -41,8 +242,10 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'socket.io/socket.io.js', async: true },
+					{ src: 'plugin/notes-server/client.js', async: true }
+				],
 			});
 		</script>
 	</body>
